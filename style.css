@@ -4,41 +4,46 @@
 }
 
 body{
-
+	min-width: 250px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	color: #c2bfc1;
-	background-color: #0f0f0f;
+	background-color: #c5bbba;
 	font-size: 16.5px;
 	font-family: 'Quicksand', sans-serif;
 }
 #title{
 	color: white;
-	text-shadow: 0 0 10px #ac0465;
+	text-shadow: 0 0 10px #733651;
 }
 #description
 {
-	margin-right: 3vw;
-	margin-left: 3vw;
+	color: #000000;
+	margin: 0px 30px 0px 30px;
+
 }
 .container
 {
-	padding: 0.1px 0px 50px 0px;
+
+	box-shadow: inset 4px 4px 3px #afa6a6,
+            inset -4px -4px 1px #dbd0ce;
+
+	padding: 0.1px 0px 5px 0px;
 	border-radius: 20px;
-	background-color: #0f0f0f;
-	width: 580px;
-	box-shadow:  inset 4.5px 3.5px 3px #1f1f1f /*#1f1f1f*/,
-          inset  -3.5px -5px 5px #040404;
+	min-width: 90%;
+
+  border-radius: 7px;
+  background-color: #c5bbba
+
+
           font-family: 'Quicksand', sans-serif;
 }
 
 
 form{
-	margin: 0px 70px 0px 70px;
-	background-color: #0f0f0f;
-
-	
+	margin-right: 12%;
+	margin-left: 12%;
+	margin-top: 5%;
 }
 
 
@@ -64,46 +69,44 @@ input
 }
 .form-control
 {
-	
-	padding: 3vh;
+
+	border-radius: 7px;
+	box-shadow: inset 4px 4px 3px #afa6a6,
+            inset -4px -4px 1px #dbd0ce;
+
+	padding: 13px 0 13px 10px;
+	max-width: 100%;
 	background: none;
 	border: none;
 	outline:none;
-   border-radius: 8px;
-  
-          box-shadow: inset 6.5px 6.5px 6.5px #060606,
-            inset -6.5px -6.5px 6.5px #181818;
-         color: #e3d5dd;
+         color: #733651;
          font-family: 'Quicksand', sans-serif;
 }
+
 .form-control:focus {
-	box-shadow:  inset 2px 2px 2px #b06b93  /*#cbced1*/,
-          inset  -2px -2px 2px #b06b93;
-          color: #c2bfc1;
-          font-size: 15px;
- 
+	 font-size: 15px;
+	 box-shadow: inset 4px 4px 3px #afa6a6,
+            inset -4px -4px 1px #dbd0ce;
 }
-
-
-
 
 #dropdown
 {
-	color:  #e8dfe4;;
-	padding: 2.5vh;
+	color: #733651;
+	padding: 15px 0px 15px 0px;
+	max-width: 100%;
 	background: none;
 	border: none;
 	outline:none;
-   border-radius: 8px;
-    box-shadow: inset 6.5px 6.5px 6.5px #060606,
-            inset -6.5px -6.5px 6.5px #181818;
-          color: #c2bfc1;
+	border-radius: 7px;
+	box-shadow: inset 4px 4px 3px #afa6a6,
+            inset -4px -4px 1px #dbd0ce;
+
+    
           font-size: 15px;
 }
 #name-label
 {
-	padding-bottom: 8px;
-	padding-left: 10px;
+	padding: 8px 0px 8px 8px;
 }
 #email-label
 {
@@ -124,12 +127,10 @@ input
 	border: none;
 	outline:none;
    border-radius: 8px;
-   box-shadow:  inset 2.4px 2.7px 1px #1f1f1f  /*#cbced1*/,
-          inset  -1.5px -1.8px 2px #040404;
-          color: #9e7e91;
-          font-weight: bold;
-          font-size: 16px;
-          
+   color: white;
+   font-weight: 600;
+   font-size: 16px;
+    background-color: #733651;   
 }
 
 #comments
@@ -140,53 +141,16 @@ max-width: 100%;
 	max-height: 18vh;
 }
 
-
-@media (max-width: 800px) {
-  .container {
-    max-width: 75vw;
-  }
-
-}
-@media (max-width: 600px) {
-
-	
-
-	.container
-	{
-		font-size: 15px;
-	}
-  form{
-	margin: 0px 30px 0px 30px;
-	}
-	.form-control{
-		padding: 2.5vh;
-	}
-	input
-{
-	font-size: 14.5px;
-}
-}
-
-@media(max-width: 400px)
+@media (max-width: 400px)
 {
 	body{
-		position: absolute;
-		align-self: flex-start;
-		text-align: left;
-
+		font-size: 15px;
 	}
-	.container
+	.form-control{
+		padding: 10px 0 10px 10px;
+	}
+	input, form
 	{
-		font-size: 13px;
-		max-width: 320px;
-	}
-	input, #dropdown{
-		font-size: 13px;
-		color: #e3d5dd;
-         font-family: 'Quicksand', sans-serif;
-	}
-
-	#submit{
-		 font-size: 14px;
+	font-size: 14px;
 	}
 }
